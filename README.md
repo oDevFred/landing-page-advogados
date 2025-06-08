@@ -1,4 +1,4 @@
-# 🏛️ Landing Page: Escritório de Advocacia [Nome do Escritório]
+# 🏛️ Landing Page: Escritório de Advocacia Lex Prime
 
 ---
 
