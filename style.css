@@ -1,0 +1,63 @@
+/* Estilos ppersonalizados para a Seção Hero */
+.hero-section {
+    background: url('https://cdn.discordapp.com/attachments/1333279562557161523/1381336027045560510/a.png?ex=684724ec&is=6845d36c&hm=cbe20a289ba9a55c2e12c21942e98c569c41949745018d1a714cb042e29b9e7d&') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Garante que a seção ocupe 100% da altura da tela */
+    padding-top: 56px; /* Ajusta o padding para o cabeçalho fixo */
+    position: relative; /* Necessário para o overlay */
+}
+
+/* Adiciona um overlay escuro para o texto mais visível */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilo para o botão de chamada para ação */
+.custom-btn {
+    background-color: #000080;
+    border-color: #000080;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #000066;
+    border-color: #000066;
+}
+
+/* Ajuste para o padding superior do corpo da página por causa do navbar fixo */
+body {
+    padding-top: 56px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-body img {
+    max-width: 80px;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 56px;
+}
